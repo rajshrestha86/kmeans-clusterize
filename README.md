@@ -4,7 +4,7 @@ KMeans clustering is a exploratory data-analysis technique which uses vector qua
 This approach groups similar data to each other and differentiates the data between the clusters. 
 The algorithm starts with the random data points assigned to clusters as initial centroids. Then for each datapoint the algorithm determines the nearest cluster according to centroids. After all the data points are assigned to clusters then a new centroid is calculated by computing the average of all the data points in a cluster. The algorithm then repeats until a certain number of iterations or until the centroid doesn’t change on further iteration. 
 
-##Preparation of Dataset
+## Preparation of Dataset
 We used a dataset of songs in spotify found from kaggle.
 The dataset contains 42305 rows and 22 different columns. In order to decide the columns to be used for the clustering and the number of clusters to be determined we created an elbow diagram (Fig 1) with sum of squared distances for different numbers of  clusters as shown in Fig 1. From fig we can see that the elbow lies in between 6 and 7. 
 Based on that the number of clusters was decided to be 6. Similarly, there were 22 different columns which include 10 numerical columns. To decide the columns to be used in clustering we created a correlation heatmap. From the correlation heatmap, 'danceability', 'energy', 'loudness', 'speechiness', 'liveness', and 'valence' was decided to be used for the clustering purpose.
