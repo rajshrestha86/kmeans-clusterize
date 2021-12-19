@@ -1,0 +1,6 @@
+*.zip
+cmake-build-debug/
+main
+mpi/main_mpi
+openmp/main_omp
+*.out
